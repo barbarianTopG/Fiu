@@ -252,9 +252,9 @@ errorHandling then aw=i(b(aq,av,at,ao.protos,ao.code,au))else aw=i(true,aq(av,at
 ,ao.protos,ao.code,au))end if aw[1]then return j(aw,2,aw.n)else local ax=aw[2]if
 aj then aj(ax,at,av,ao,an,ap)end if G(ax)==false then if ad.allowProxyErrors
 then c(ax)else ax=a(ax)end end if ao.lineinfoenabled then return c(g(
-'Fiu VM Error { Name: %s Line: %s PC: %s Opcode: %s }: %s',ao.debugname,ao.
+'VM Error { Name: %s Line: %s PC: %s Opcode: %s }: %s',ao.debugname,ao.
 instructionlineinfo[av.pc],av.pc,av.name,ax),0)else return c(g(
-'Fiu VM Error { Name: %s PC: %s Opcode: %s }: %s',ao.debugname,av.pc,av.name,ax)
+'VM Error { Name: %s PC: %s Opcode: %s }: %s',ao.debugname,av.pc,av.name,ax)
 ,0)end end end if ad.errorHandling then return ar else return aq end end return
 am(ab,af),al end return{luau_newsettings=M,luau_validatesettings=N,
 luau_deserialize=S,luau_load=aa,luau_getcoverage=Q}
